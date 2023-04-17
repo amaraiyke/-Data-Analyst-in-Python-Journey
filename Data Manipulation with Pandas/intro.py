@@ -55,6 +55,8 @@ dogs[is_black_or_brown]
 # The Mojave Desert states
 canu = ["California", "Arizona", "Nevada", "Utah"]
 
+homelessness = []
+
 # Filter for rows in the Mojave Desert states
 mojave_homelessness = homelessness[homelessness["state"].isin(canu)]
 
