@@ -52,3 +52,11 @@ dogs[ (dogs["breed"] == "Labrador") & (is_brown = dogs["color"] == "Brown") ]
 is_black_or_brown = dogs["color"].isin(["Black", "Brown"])
 dogs[is_black_or_brown]
 
+# The Mojave Desert states
+canu = ["California", "Arizona", "Nevada", "Utah"]
+
+# Filter for rows in the Mojave Desert states
+mojave_homelessness = homelessness[homelessness["state"].isin(canu)]
+
+# See the result
+print(mojave_homelessness)
